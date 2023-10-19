@@ -15,49 +15,55 @@
   justify-content: space-between;
   font-family: BaiJamjuree;
   /* box-shadow: 2px 2px 20px 2px grey; */
-  box-shadow: 8px 8px 16px #c5c5c5,
-             -8px -8px 16px #ffffff;
-             border-radius: .8vmax;
+  box-shadow: 8px 8px 16px #c5c5c5, -8px -8px 16px #ffffff;
+  border-radius: 0.8vmax;
 }
 .contact-head {
   width: 100%;
   font-size: 1.7vmax;
   text-align: center;
 }
-.inps-cnt{
-    width: 100%;
-    display: flex;
+.inps-cnt {
+  width: 100%;
+  display: flex;
 }
-.inp-cnt{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    padding: 1vmax;
+.inp-cnt {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 1vmax;
 }
-.inp-cnt label{
-    color: rgb(164, 164, 164);
+.inp-cnt label {
+  color: rgb(164, 164, 164);
 }
 
-.inp-cnt input,.inp-cnt textarea{
-    padding: .5vmax;
-    font-family: BaiJamjur;
-    border: none;
-    font-size: 1.4vmax;
-    border-bottom: 1px solid rgb(160, 160, 160);
-    resize: none;
+.inp-cnt input,
+.inp-cnt textarea {
+  padding: 0.5vmax;
+  font-family: BaiJamjur;
+  border: none;
+  font-size: 1.4vmax;
+  border-bottom: 1px solid rgb(160, 160, 160);
+  resize: none;
 }
-.btn{
-    width: 25vmax;
-    padding: .8vmax;
-    font-size: 1.2vmax;
-    background-color: rgb(46, 46, 46);
-    border-radius: 100px;
-    color: white;
-    border: none;
-    outline: none;
-    transition: cubic-bezier(0.19, 1, 0.22, 1) 1s;
-    cursor: pointer;
+.btn {
+  width: 25vmax;
+  padding: 0.8vmax;
+  font-size: 1.2vmax;
+  background-color: rgb(46, 46, 46);
+  border-radius: 100px;
+  color: white;
+  border: none;
+  outline: none;
+  transition: cubic-bezier(0.19, 1, 0.22, 1) 1s;
+  cursor: pointer;
 }
-.btn:hover{
-    background-color: black;
+.btn:hover {
+  background-color: black;
+}
+@media screen and (max-width: 1200px) {
+  .inps-cnt {
+    flex-direction: column;
+    gap: 4vmax;
+  }
 }
