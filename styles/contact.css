@@ -7,7 +7,8 @@
 }
 .contact-box {
   width: 70%;
-  padding: 3vmax;
+  margin-top: 2vmax;
+  padding: 2vmax;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -61,8 +62,11 @@
   background-color: black;
 }
 @media screen and (max-width: 1200px) {
+  .contact-box {
+    gap: 4vmax;
+  }
   .inps-cnt {
     flex-direction: column;
-    gap: 4vmax;
+    gap: 1vmax;
   }
 }
