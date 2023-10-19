@@ -43,14 +43,13 @@ nav {
   height: 17vmax;
   transform: rotate(-45deg) translate(73%, -75%);
   background-color: rgb(232, 232, 232);
-  transition: cubic-bezier(0.19, 1, 0.22, 1);
 }
 .active-logo {
-  animation: activelogo 2s;
+  animation: activelogo 1.7s ease-in-out;
   transform: rotate(-45deg) translate(-19%, -75%);
 }
 .inactive-logo {
-  animation: inactivelogo 1.7s;
+  animation: inactivelogo 1.7s ease-in-out;
   transform: rotate(-45deg) translate(73%, -75%);
 }
 .logo {
@@ -67,15 +66,14 @@ nav {
   transform: rotate(-45deg) translate(90%, -225%);
   background-color: rgb(255, 255, 255);
   /* color: white; */
-  transition: cubic-bezier(0.19, 1, 0.22, 1);
   box-shadow: 0px 25px 18px -18px #a0a0a0;
 }
 .active-nav {
-  animation: activeNavItem 2s;
+  animation: activeNavItem 1.7s ease-in-out;
   transform: rotate(-45deg) translate(-5%, -225%);
 }
 .inactive-nav {
-  animation: inactiveNavItem 2s;
+  animation: inactiveNavItem 1.7s ease-in-out;
   transform: rotate(-45deg) translate(90%, -225%);
 }
 @keyframes inactivelogo {
@@ -199,6 +197,8 @@ header {
   font-family: Bakbak;
 }
 .logo-name {
+  text-decoration: none;
+  color: black;
   font-size: 1.1vmax;
   font-family: Bakbak;
 }
