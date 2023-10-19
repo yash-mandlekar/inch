@@ -1,0 +1,44 @@
+.contact-box-cnt {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contact-box {
+  height: 70%;
+  width: 70%;
+  padding: 3vmax;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  font-family: BaiJamjuree;
+  box-shadow: 2px 2px 20px 2px grey;
+}
+.contact-head {
+  width: 100%;
+  font-size: 1.7vmax;
+  text-align: center;
+}
+.inps-cnt{
+    width: 100%;
+    display: flex;
+}
+.inp-cnt{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 1vmax;
+}
+.inp-cnt label{
+    color: rgb(164, 164, 164);
+}
+
+.inp-cnt input{
+    padding: .5vmax;
+    font-family: BaiJamjur;
+    font-size: 1.4vmax;
+    border: none;
+    border-bottom: 1px solid rgb(160, 160, 160);
+}

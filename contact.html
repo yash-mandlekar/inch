@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/nav.css" />
+    <link rel="stylesheet" href="styles/contact.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="logo-cnt">
+        <img class="logo" src="./img/logo.png" alt="" />
+      </div>
+      <div class="nav-item-cnt">
+        <a href="Projects.html" class="nav-item">Projects</a>
+        <a href="Contact.html" class="nav-item">Contact</a>
+        <a href="About.html" class="nav-item">About</a>
+        <a href="index.html" class="nav-item">Home</a>
+      </div>
+    </nav>
+    <header>
+      <div class="part1">
+        <p>COMMERCIAL</p>
+        <div class="logo-name">IMAGINE EVERY INCH</div>
+        <input
+          hidden=""
+          class="check-icon"
+          id="check-icon"
+          name="check-icon"
+          type="checkbox"
+        />
+        <label class="icon-menu" for="check-icon">
+          <div class="bar bar--1"></div>
+          <div class="bar bar--2"></div>
+          <div class="bar bar--3"></div>
+        </label>
+      </div>
+      <div class="part2">
+        <p>RENOVATION</p>
+        <p>INTERIOR / <b>FURNITURE</b></p>
+        <p>RESIDENTIAL</p>
+      </div>
+    </header>
+    <div class="contact-box-cnt">
+      <div class="contact-box">
+        <div class="contact-head">Let's Talk</div>
+        <div class="inps-cnt">
+            <div class="inp-cnt">
+                <label for="name">Name *</label>
+                <input type="text" placeholder="Your Name" name="name" id="">
+            </div>
+            <div class="inp-cnt">
+                <label for="name">Email *</label>
+                <input type="text" placeholder="Your Email" name="email" id="">
+            </div>
+        </div>
+        <div class="inp-cnt">
+            <label for="subject">Subject</label>
+            <input type="text" placeholder="Your Subject" name="subject" id="">
+        </div>
+        <div class="msg-box">
+            <label for="message"></label>
+            <textarea name="message" id="" cols="30" rows="10"></textarea>
+        </div>
+        <button class="btn">
+            Send Message
+        </button>
+      </div>
+    </div>
+    <script src="js/nav.js"></script>
+  </body>
+</html>

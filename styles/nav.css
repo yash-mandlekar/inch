@@ -1,0 +1,207 @@
+@font-face {
+  font-family: Bakbak;
+  src: url(../fonts/BakbakOne-Regular.ttf);
+}
+@font-face {
+  font-family: Devanagri;
+  src: url(../fonts/devanagari-sangam-mn.ttf);
+}
+@font-face {
+  font-family: Copperplate;
+  src: url(../fonts/copperplate.ttf);
+}
+@font-face {
+  font-family: BaiJamjuree;
+  src: url(../fonts/BaiJamjuree-Regular.ttf);
+}
+@font-face {
+  font-family: BaiJamjur;
+  src: url(../fonts/BaiJamjuree-Light.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+nav {
+  width: 0vh;
+  padding: 1vmax;
+  position: fixed;
+  z-index: 2;
+}
+.logo-cnt {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40vmax;
+  height: 17vmax;
+  transform: rotate(-45deg) translate(73%, -75%);
+  background-color: rgb(232, 232, 232);
+  transition: cubic-bezier(0.19, 1, 0.22, 1);
+}
+.active-logo {
+  animation: activelogo 2s;
+  transform: rotate(-45deg) translate(-19%, -75%);
+}
+.inactive-logo {
+  animation: inactivelogo 1.7s;
+  transform: rotate(-45deg) translate(73%, -75%);
+}
+.logo {
+  transform: rotate(45deg);
+  width: 7vmax;
+}
+.nav-item-cnt {
+  padding: 0 4vmax;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 50vmax;
+  height: 6vmax;
+  transform: rotate(-45deg) translate(90%, -225%);
+  background-color: rgb(255, 255, 255);
+  /* color: white; */
+  transition: cubic-bezier(0.19, 1, 0.22, 1);
+  box-shadow: 0px 25px 18px -18px #a0a0a0;
+}
+.active-nav {
+  animation: activeNavItem 2s;
+  transform: rotate(-45deg) translate(-5%, -225%);
+}
+.inactive-nav {
+  animation: inactiveNavItem 2s;
+  transform: rotate(-45deg) translate(90%, -225%);
+}
+@keyframes inactivelogo {
+  0% {
+    transform: rotate(-45deg) translate(-19%, -75%);
+  }
+  100% {
+    transform: rotate(-45deg) translate(73%, -75%);
+  }
+}
+@keyframes activelogo {
+  0% {
+    transform: rotate(-45deg) translate(73%, -75%);
+  }
+  100% {
+    transform: rotate(-45deg) translate(-19%, -75%);
+  }
+}
+@keyframes activeNavItem {
+  0% {
+    transform: rotate(-45deg) translate(90%, -225%);
+    /* box-shadow: 0px 25px 18px -18px #ffffff; */
+  }
+  100% {
+    transform: rotate(-45deg) translate(-5%, -225%);
+    /* box-shadow: 0px 25px 18px -18px #414141; */
+  }
+}
+@keyframes inactiveNavItem {
+  0% {
+    transform: rotate(-45deg) translate(-5%, -225%);
+  }
+  100% {
+    transform: rotate(-45deg) translate(90%, -225%);
+  }
+}
+
+.nav-item {
+  font-family: Bakbak;
+  font-size: 0.9vmax;
+  letter-spacing: 1px;
+  text-decoration: none;
+  transform: rotate(45deg);
+  color: rgb(0, 0, 0);
+}
+.icon-menu {
+  --gap: 5px;
+  --height-bar: 2.5px;
+  --pos-y-bar-one: 0;
+  --pos-y-bar-three: 0;
+  --scale-bar: 1;
+  --rotate-bar-one: 0;
+  --rotate-bar-three: 0;
+  width: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap);
+  cursor: pointer;
+  position: relative;
+  margin: 0 2vmax;
+}
+
+.bar {
+  position: relative;
+  height: var(--height-bar);
+  width: 100%;
+  border-radius: 0.5rem;
+  background-color: #060606;
+}
+
+.bar--1 {
+  top: var(--pos-y-bar-one);
+  transform: rotate(var(--rotate-bar-one));
+  transition: top 200ms 100ms, transform 100ms;
+}
+
+.bar--2 {
+  transform: scaleX(var(--scale-bar));
+  transition: transform 150ms 100ms;
+}
+
+.bar--3 {
+  bottom: var(--pos-y-bar-three);
+  transform: rotate(var(--rotate-bar-three));
+  transition: bottom 200ms 100ms, transform 100ms;
+}
+
+.check-icon:checked + .icon-menu > .bar--1 {
+  transition: top 200ms, transform 200ms 100ms;
+}
+
+.check-icon:checked + .icon-menu > .bar--3 {
+  transition: bottom 200ms, transform 200ms 100ms;
+}
+
+.check-icon:checked + .icon-menu {
+  --pos-y-bar-one: calc(var(--gap) + var(--height-bar));
+  --pos-y-bar-three: calc(var(--gap) + var(--height-bar));
+  --scale-bar: 0;
+  --rotate-bar-one: 45deg;
+  --rotate-bar-three: -45deg;
+}
+header {
+  padding: 1vmax;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  background-color: white;
+}
+.part1,
+.part2 {
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  padding: 0.5vmax;
+  font-family: Devanagri;
+  text-shadow: 1px;
+  font-size: 0.9vmax;
+}
+.part2 b {
+  font-family: Bakbak;
+}
+.logo-name {
+  font-size: 1.1vmax;
+  font-family: Bakbak;
+}
+.part2 {
+  border-top: 1px solid black;
+}

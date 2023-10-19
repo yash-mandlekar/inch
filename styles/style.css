@@ -1,0 +1,54 @@
+
+/* FIN ICON-MENU */
+
+
+.line {
+  width: 8vmax;
+  height: 2px;
+  background-color: black;
+}
+.moto {
+  padding-top: 7vmax;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.7vmax;
+  font-family: Copperplate;
+  font-size: 1.6vmax;
+  letter-spacing: 1px;
+}
+.moto-2 {
+  display: flex;
+  gap: 0.7vmax;
+  font-size: 1.3vmax;
+  letter-spacing: 3px;
+  align-items: center;
+}
+.client {
+  width: 100%;
+  padding: 3vmax 1vmax;
+  display: flex;
+}
+.client .img-cnt {
+  width: 100%;
+  overflow: hidden;
+  border-radius: 0.5vmax;
+}
+.client .img-cnt .house-img {
+  width: 100%;
+}
+.client-img {
+  height: 3.3vmax;
+}
+.client-name {
+  padding: 0.7vmax 0 0 0;
+  font-family: Bakbak;
+  text-transform: uppercase;
+}
+.client-name,
+.client-img {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
