@@ -35,10 +35,15 @@
     color: rgb(164, 164, 164);
 }
 
-.inp-cnt input{
+.inp-cnt input,.inp-cnt textarea{
     padding: .5vmax;
     font-family: BaiJamjur;
     font-size: 1.4vmax;
     border: none;
     border-bottom: 1px solid rgb(160, 160, 160);
+}
+.btn{
+    width: 25vmax;
+    padding: .5vmax;
+
 }
