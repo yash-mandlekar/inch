@@ -38,12 +38,17 @@
 .inp-cnt input,.inp-cnt textarea{
     padding: .5vmax;
     font-family: BaiJamjur;
-    font-size: 1.4vmax;
     border: none;
+    font-size: 1.4vmax;
     border-bottom: 1px solid rgb(160, 160, 160);
 }
 .btn{
     width: 25vmax;
-    padding: .5vmax;
-
+    padding: .8vmax;
+    font-size: 1.2vmax;
+    background-color: black;
+    border-radius: 100px;
+    color: white;
+    border: none;
+    outline: none;
 }
