@@ -195,6 +195,10 @@ header {
 .part2 b {
   font-family: Bakbak;
 }
+.part2 .com {
+  display: none;
+}
+
 .logo-name {
   text-decoration: none;
   color: black;
@@ -203,6 +207,21 @@ header {
 }
 .part2 {
   border-top: 1px solid black;
+}
+
+@media screen and (max-width: 1200px) {
+  .nav-item {
+    font-size: 1.2vmax;
+  }
+  .part1 p {
+    display: none;
+  }
+  .logo-name {
+    font-size: 2vmax;
+  }
+  .part2 p:nth-child(2) {
+    display: initial;
+  }
 }
 
 /* --------------------------------------------------  Locomotive -------------------------------------------------- */
@@ -260,4 +279,88 @@ html.has-scroll-dragging {
 .has-scroll-dragging .c-scrollbar_thumb {
   cursor: -webkit-grabbing;
   cursor: grabbing;
+}
+
+/* ------------------------------------------------------ Footer ------------------------------------------------------ */
+
+footer {
+  width: 100%;
+  /* position: absolute;
+  bottom: 0; */
+  display: flex;
+  justify-content: space-between;
+  padding: 2vmax 6vmax;
+  box-shadow: 1px 13px 54px -19px rgba(0, 0, 0, 0.83);
+
+}
+.foot-logo img {
+  width: 10vmax;
+}
+.quote {
+  font-family: BaiJamjuree;
+  font-size: 1vmax;
+  color: #555555;
+  text-align: center;
+}
+.foot-content {
+  width: 80%;
+  padding: 2vmax 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.icons {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: end;
+  gap: 0.5vmax;
+  text-decoration: none;
+  color: black;
+  font-size: 1vmax;
+  font-family: Bakbak;
+  height: 3.5vmax;
+  position: relative;
+}
+.icon svg {
+  position: absolute;
+  top: 0;
+}
+.insta:hover .active {
+  animation: activeicon linear 0.5s;
+  opacity: 1;
+}
+.insta:hover .inactive {
+  animation: inactiveicon linear 0.5s;
+  opacity: 0;
+}
+.insta .active {
+  animation: inactiveicon linear 0.5s;
+  opacity: 0;
+}
+.insta .inactive {
+  animation: activeicon linear 0.5s;
+  opacity: 1;
+}
+@keyframes activeicon {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes inactiveicon {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }
