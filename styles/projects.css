@@ -1,0 +1,49 @@
+.main {
+  height: auto;
+  padding-top: 10vmax;
+}
+.section {
+  padding: 3vmax;
+  width: 100vmax;
+  display: flex;
+  /* align-items: center; */
+  justify-content: space-between;
+  margin-bottom: 2vmax;
+}
+
+.img-cnt {
+  width: 56vmax;
+}
+.img-cnt img {
+  width: 100%;
+}
+.content {
+  width: 34vmax;
+  text-align: center;
+}
+.head {
+  font-family: Copperplate;
+  font-size: 24px;
+  margin-bottom: 1vmax;
+}
+.row {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1vmax 0;
+  border-bottom: 2px solid #D9D9D9;
+}
+.desc-head,.key{
+    text-align: left;
+    font-family: BaiJamjuree;
+    font-weight: bold;
+}
+.desc,.value{
+    font-family: BaiJamjur;
+    text-align: justify;
+}
+.desc-head{
+    font-size: 18px;
+    padding: 1vmax 0;
+}
