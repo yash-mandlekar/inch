@@ -47,9 +47,8 @@
   color: #424242;
 }
 .content p {
-  /* text-align: justify; */
+  text-align: justify;
   font-family: Devanagri;
-  padding: 0 2vmax;
   font-size: 1.2vmax;
   letter-spacing: 1px;
   line-height: 2vmax;
@@ -57,8 +56,13 @@
 @media screen and (max-width: 1200px) {
   .section {
     flex-direction: column-reverse;
+    gap: 3vmax;
   }
   .section2 {
     flex-direction: column;
+    gap: 3vmax;
+  }
+  .img-cnt2 img {
+    width: 100%;
   }
 }

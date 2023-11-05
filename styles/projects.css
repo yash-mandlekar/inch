@@ -34,6 +34,7 @@
   justify-content: space-between;
   padding: 1vmax 0;
   border-bottom: 2px solid #d9d9d9;
+  font-size: 1.2vmax;
 }
 .desc-head,
 .key {
@@ -43,10 +44,12 @@
 }
 .desc,
 .value {
+  font-size: 1.2vmax;
   font-family: BaiJamjur;
   text-align: justify;
 }
 .desc-head {
+  font-size: 1.2vmax;
   padding: 1vmax 0;
 }
 @media screen and (max-width: 1200px) {
