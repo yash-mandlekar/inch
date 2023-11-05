@@ -43,7 +43,7 @@
       </div>
     </header>
     <div data-scroll-container id="main" class="contact-box-cnt">
-      <div class="contact-box">
+      <form class="contact-box letter" method="post">
         <div class="contact-head">Let's Talk</div>
         <div class="inps-cnt">
           <div class="inp-cnt">
@@ -69,14 +69,17 @@
           ></textarea>
         </div>
         <button class="btn">Send Message</button>
-      </div>
+      </form>
       <footer>
         <div class="foot-logo">
           <img src="./img/logo.png" alt="" />
         </div>
         <div class="foot-content">
           <div class="icons">
-            <a href="https://www.instagram.com/_imagine_every_inch/" class="icon insta">
+            <a
+              href="https://www.instagram.com/_imagine_every_inch/"
+              class="icon insta"
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="28"
@@ -94,7 +97,7 @@
                 width="32"
                 height="32"
                 viewBox="0 0 256 256"
-                style="padding: .2vmax;"
+                style="padding: 0.2vmax"
                 class="active"
               >
                 <g fill="none">
@@ -145,7 +148,10 @@
               </svg>
               <span>Instagram</span>
             </a>
-            <a href="https://www.snapchat.com/add/nsahu8084?share_id=E0kXLOBQTnI&locale=en-GB" class="icon insta">
+            <a
+              href="https://www.snapchat.com/add/nsahu8084?share_id=E0kXLOBQTnI&locale=en-GB"
+              class="icon insta"
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="28"
@@ -172,7 +178,10 @@
               </svg>
               <span>Snapchat</span>
             </a>
-            <a href="https://www.facebook.com/people/Nisha-Sahu/pfbid02a4kwjTUQF1c2mu18W14nut7j6m6bi8H625kh6fX6BvigV6pNXT5zDZGt35LhYtyVl/?mibextid=ZbWKwL" class="icon insta">
+            <a
+              href="https://www.facebook.com/people/Nisha-Sahu/pfbid02a4kwjTUQF1c2mu18W14nut7j6m6bi8H625kh6fX6BvigV6pNXT5zDZGt35LhYtyVl/?mibextid=ZbWKwL"
+              class="icon insta"
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="26"
@@ -348,5 +357,37 @@
       </footer>
     </div>
     <script src="js/nav.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script>
+      function addClass(e) {
+        emailjs.init("lSBGy8OJ6EzdtqTYr");
+        e.preventDefault();
+        var { name, email, subject, message } = e.target;
+        if ((name.value, email.value, message.value)) {
+          document.body.classList.add("sent");
+          var params = {
+            sendername: name.value,
+            to: "Imagineeveryinchbpl@gmail.com",
+            subject: "Event Details",
+            replyto: email.value,
+            message: `Sender ${name.value} sent ${email.value} to ${subject && subject} on ${message}`,
+          };
+          var service_id = "service_l9nrhs3";
+          var template_id = "template_92kdagf";
+
+          // emailjs.send(service_id, template_id, params).then(
+          //   function (response) {
+          //     console.log("SUCCESS!", response.status, response.text);
+          //   },
+          //   function (error) {
+          //     console.log("FAILED...", error);
+          //   }
+          // );
+        }
+      }
+      var letter = document.querySelector(".letter");
+      letter.addEventListener("submit", addClass);
+    </script>
   </body>
 </html>
