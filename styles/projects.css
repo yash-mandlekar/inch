@@ -1,5 +1,5 @@
 .main {
-  height: auto;
+  /* height: auto; */
   padding-top: 10vmax;
 }
 .section,.section2 {
@@ -9,7 +9,7 @@
   justify-content: space-between;
   margin-bottom: 2vmax;
   gap: 2vmax;
-  border-bottom: 1px solid #000000;
+  border-bottom: 1px solid #c4c4c4;
 }
 
 .img-cnt {
