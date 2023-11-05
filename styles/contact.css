@@ -64,6 +64,9 @@
   background-color: black;
 }
 @media screen and (max-width: 1200px) {
+  .contact-box-cnt{
+    height: 100vmax;
+  }
   .contact-box {
     width: 95%;
     gap: 4vmax;

@@ -209,21 +209,6 @@ header {
   border-top: 1px solid black;
 }
 
-@media screen and (max-width: 1200px) {
-  .nav-item {
-    font-size: 1.2vmax;
-  }
-  .part1 p {
-    display: none;
-  }
-  .logo-name {
-    font-size: 2vmax;
-  }
-  .part2 p:nth-child(2) {
-    display: initial;
-  }
-}
-
 /* --------------------------------------------------  Locomotive -------------------------------------------------- */
 /*! locomotive-scroll v3.5.4 | MIT License | https://github.com/locomotivemtl/locomotive-scroll */
 html.has-scroll-smooth {
@@ -362,5 +347,25 @@ footer {
   }
   100% {
     opacity: 0;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .nav-item {
+    font-size: 1.2vmax;
+  }
+  .part1 p {
+    display: none;
+  }
+  .logo-name {
+    font-size: 2vmax;
+  }
+  .part2 p:nth-child(2) {
+    display: initial;
+  }
+  .icon svg{
+    height: 15px;
+  }
+  footer{
+    padding: 2vmax;
   }
 }
