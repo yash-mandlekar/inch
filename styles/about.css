@@ -65,4 +65,7 @@
   .img-cnt2 img {
     width: 100%;
   }
+  .img-cnt,.img-cnt2,.content{
+    width: unset;
+  }
 }
