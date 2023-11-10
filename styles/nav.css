@@ -1,3 +1,7 @@
+:root {
+  --white: black;
+  --black: white;
+}
 @font-face {
   font-family: Bakbak;
   src: url(../fonts/BakbakOne-Regular.ttf);
@@ -22,6 +26,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  color: white;
+  /* background-color: black; */
 }
 html,
 body {
@@ -30,7 +36,7 @@ body {
 }
 nav {
   width: 0vh;
-  padding: 1vmax;
+  /* padding: 1vmax; */
   position: fixed;
   z-index: 2;
 }
@@ -41,7 +47,7 @@ nav {
   width: 40vmax;
   height: 17vmax;
   transform: rotate(-45deg) translate(73%, -75%);
-  background-color: rgb(232, 232, 232);
+  background-color: rgb(53, 53, 53);
 }
 .active-logo {
   animation: activelogo 1.7s ease-in-out;
@@ -56,16 +62,15 @@ nav {
   width: 7vmax;
 }
 .nav-item-cnt {
-  padding: 0 4vmax;
+  padding: 0 7vmax;
   display: flex;
   align-items: center;
   justify-content: space-around;
   width: 50vmax;
   height: 6vmax;
   transform: rotate(-45deg) translate(90%, -225%);
-  background-color: rgb(255, 255, 255);
-  /* color: white; */
-  box-shadow: 0px 25px 18px -18px #a0a0a0;
+  background-color: var(--white);
+  box-shadow: 0px 25px 18px -18px #313131;
 }
 .active-nav {
   animation: activeNavItem 1.7s ease-in-out;
@@ -116,7 +121,7 @@ nav {
   letter-spacing: 1px;
   text-decoration: none;
   transform: rotate(45deg);
-  color: rgb(0, 0, 0);
+  color: var(--black);
 }
 .icon-menu {
   --gap: 5px;
@@ -140,7 +145,7 @@ nav {
   height: var(--height-bar);
   width: 100%;
   border-radius: 0.5rem;
-  background-color: #060606;
+  background-color: var(--black);
 }
 
 .bar--1 {
@@ -180,7 +185,7 @@ header {
   width: 100%;
   position: fixed;
   z-index: 1;
-  background-color: white;
+  background-color: var(--white);
 }
 .part1,
 .part2 {
@@ -201,12 +206,12 @@ header {
 
 .logo-name {
   text-decoration: none;
-  color: black;
+  color: var(--black);
   font-size: 1.1vmax;
   font-family: Bakbak;
 }
 .part2 {
-  border-top: 1px solid black;
+  border-top: 1px solid var(--black);
 }
 
 /* --------------------------------------------------  Locomotive -------------------------------------------------- */
@@ -253,7 +258,7 @@ html.has-scroll-dragging {
   position: absolute;
   top: 0;
   right: 0;
-  background-color: black;
+  background-color: var(--black);
   opacity: 0.5;
   width: 7px;
   border-radius: 10px;
@@ -275,8 +280,8 @@ footer {
   display: flex;
   justify-content: space-between;
   padding: 2vmax 6vmax;
-  box-shadow: 1px 13px 54px -19px rgba(0, 0, 0, 0.83);
-
+  box-shadow: 1px 13px 54px -19px rgba(255, 255, 255, 0.853);
+  background-color: black;
 }
 .foot-logo img {
   width: 10vmax;
@@ -307,7 +312,7 @@ footer {
   justify-content: end;
   gap: 0.5vmax;
   text-decoration: none;
-  color: black;
+  color: var(--black);
   font-size: 1vmax;
   font-family: Bakbak;
   height: 3.5vmax;
@@ -362,10 +367,10 @@ footer {
   .part2 p:nth-child(2) {
     display: initial;
   }
-  .icon svg{
+  .icon svg {
     height: 15px;
   }
-  footer{
+  footer {
     padding: 2vmax;
   }
 }

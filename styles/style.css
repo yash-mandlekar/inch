@@ -1,8 +1,12 @@
 /* FIN ICON-MENU */
+:root {
+  --white: rgb(0, 0, 0);
+  --black: rgb(255, 255, 255);
+}
 .line {
   width: 8vmax;
   height: 2px;
-  background-color: black;
+  background-color: var(--black);
 }
 .moto {
   padding-top: 9vmax;
@@ -51,4 +55,6 @@
   left: 50%;
   transform: translate(-50%, 0);
 }
-
+.main{
+  background-color: var(--white);
+}

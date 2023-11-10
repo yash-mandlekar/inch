@@ -1,3 +1,6 @@
+#main {
+  background-color: black;
+}
 .main {
   /* height: auto; */
   padding-top: 10vmax;
@@ -44,7 +47,7 @@
   font-family: Bakbak;
   font-size: 1.3vmax;
   margin: 3vmax 0 1vmax 0;
-  color: #424242;
+  color: #a4a4a4;
 }
 .content p {
   text-align: justify;
