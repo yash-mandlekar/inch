@@ -23,8 +23,10 @@
       property="og:image"
       content="http://www.imagineeveryinchwithnisha.com/img/dark-logo.png"
     />
-    <meta property="og:url" content="http://www.imagineeveryinchwithnisha.com" />
-
+    <meta
+      property="og:url"
+      content="http://www.imagineeveryinchwithnisha.com"
+    />
     <meta name="twitter:card" content="summary_large_image" />
     <meta
       name="twitter:title"
@@ -38,9 +40,9 @@
       name="twitter:image"
       content="http://www.imagineeveryinchwithnisha.com/img/dark-logo.png"
     />
-
     <meta name="author" content="Imagine Every Inch" />
     <meta name="robots" content="index, follow" />
+
     <title>
       Interior Design & Architectural Solutions | Imagine Every Inch
     </title>
@@ -48,6 +50,20 @@
     <link rel="stylesheet" href="styles/nav.css" />
     <link rel="stylesheet" href="styles/style.css" />
 
+    <!-- ✅ Correct JSON-LD (Schema.org) Placement and Content -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Imagine Every Inch",
+        "url": "https://www.imagineeveryinchwithnisha.com",
+        "logo": "https://www.imagineeveryinchwithnisha.com/img/dark-logo.png",
+        "sameAs": [
+          "https://www.instagram.com/_imagine_every_inch/",
+          "https://www.snapchat.com/add/nsahu8084"
+        ]
+      }
+    </script>
   </head>
   <body>
     <nav>
@@ -435,19 +451,5 @@
       </footer>
     </div>
     <script src="js/nav.js"></script>
-
-    <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "Organization",
-        "name": "Imagine Every Inch",
-        "url": "http://www.yourwebsite.com",
-        "logo": "http://www.yourwebsite.com/img/dark-logo.png",
-        "sameAs": [
-          "https://www.instagram.com/_imagine_every_inch/",
-          "https://www.snapchat.com/add/nsahu8084"
-        ]
-      }
-    </script>
   </body>
 </html>
